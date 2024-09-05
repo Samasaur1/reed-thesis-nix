@@ -19,6 +19,8 @@ stdenvNoCC.mkDerivation {
 
     path="$tex/tex/latex/reedthesis"
 
+    mkdir -p "$path"
+
     cp reedthesis.cls "$path/"
 
     runHook postInstall
